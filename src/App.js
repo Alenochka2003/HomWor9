@@ -4,6 +4,7 @@ import StartSeite from './components/StartSeite';
 import ListArticle from './components/ListArticle';
 import EinzelArticle from './components/EinzelArticle';
 import styles from './components/App.module.css';
+import DynamicForm from './componentsDinamik/DynamicForm';
 
 const App = () => {
   return (
@@ -17,7 +18,10 @@ const App = () => {
         <Route path="/articles" element={<ListArticle />} />
         <Route path="/articles/:id" element={<EinzelArticle />} />
       </Routes>
+      <h1>Dynamic Form Example</h1>
+      <DynamicForm />
     </Router>
+    
   );
 };
 
